@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: students
+    schema: Falcon
+    tables:
+      - name: students
+        seed:
+          +file: student.csv
+          +column_types:
+            Student_ID: int
+            Name: text
+            Age: int
+            Grade: text
+      - name: country
+        seed:
+          +file: country.csv
+          +column_types:
+            Country: text
+            Currency: text
+           

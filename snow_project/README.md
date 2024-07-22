@@ -29,15 +29,15 @@ This document explains the different types of materializations available in `dbt
 ** {{ config(materialized='table') }} **
 **Table** materialization creates static tables. It stores the data in table form and recreates the entire table on each run.
 
-##View Materialization
+## View Materialization
 ** {{ config(materialized='view') }} **
 **View** materialization creates views that dynamically represent the underlying data. It uses less storage since it doesn't store data but fetches the query result dynamically.
 
-##Incremental Materialization
+## Incremental Materialization
 ** {{ config(materialized='incremental',unique_key='id') }} **
 
 **Incremental** materialization handles incremental loads. It doesn't recreate the entire table on each run but only adds new and updated records.
 
-##Ephemeral Materialization
+## Ephemeral Materialization
 **{{ config(materialized='ephemeral') }} **
 **Ephemeral** materialization creates transient models used as CTEs (Common Table Expressions) within other models. It does not create actual tables or views.

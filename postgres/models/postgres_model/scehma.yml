@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: student_info
+    description: "Overview of students with their calculated age"
+    columns:
+      - name: student_id
+        description: "Unique identifier for each student"
+      - name: first_name
+        description: "First name of the student"
+        tests:
+          - not_null
+          - unique

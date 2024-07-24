@@ -244,3 +244,50 @@ Runtime Error
 [0m12:33:06.699113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027213E10830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027215EBEF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027216813EF0>]}
 [0m12:33:06.699113 [debug] [MainThread]: Flushing usage events
 [0m12:33:12.727193 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m12:33:23.519684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029446AE58B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000294471AAA80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000294471A9D60>]}
+
+
+============================== 12:33:23.519684 | dea95819-3b87-4f65-b25f-b51c6ff82114 ==============================
+[0m12:33:23.519684 [info ] [MainThread]: Running with dbt=1.8.3
+[0m12:33:23.526842 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init postgres', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:33:23.538924 [debug] [MainThread]: Starter project path: C:\Users\HP\OneDrive\Desktop\dbt_snow\dbt_snowflake\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m12:33:23.562996 [info ] [MainThread]: 
+Your new dbt project "postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:33:23.562996 [info ] [MainThread]: Setting up your profile.
+[0m12:35:33.203156 [info ] [MainThread]: Profile postgres written to C:\Users\HP\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:35:33.206077 [debug] [MainThread]: Command `dbt init` succeeded at 12:35:33.206077 after 129.77 seconds
+[0m12:35:33.207061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029446B367E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029447149580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029446AE57C0>]}
+[0m12:35:33.207061 [debug] [MainThread]: Flushing usage events
+[0m12:35:43.393572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D5B0BDBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D588405C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D5798FE00>]}
+
+
+============================== 12:35:43.397581 | b4bbbf10-66ce-4983-a109-6433f0a63658 ==============================
+[0m12:35:43.397581 [info ] [MainThread]: Running with dbt=1.8.3
+[0m12:35:43.399578 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:35:43.420125 [info ] [MainThread]: dbt version: 1.8.3
+[0m12:35:43.421882 [info ] [MainThread]: python version: 3.12.4
+[0m12:35:43.422380 [info ] [MainThread]: python path: C:\Users\HP\OneDrive\Desktop\dbt_snow\dbt_snowflake\dbt-env\Scripts\python.exe
+[0m12:35:43.424391 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:35:43.768416 [info ] [MainThread]: Using profiles dir at C:\Users\HP\.dbt
+[0m12:35:43.769414 [info ] [MainThread]: Using profiles.yml file at C:\Users\HP\.dbt\profiles.yml
+[0m12:35:43.769414 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\HP\OneDrive\Desktop\dbt_snow\dbt_snowflake\dbt_project.yml
+[0m12:35:43.770412 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:35:43.772538 [debug] [MainThread]: Command `dbt debug` failed at 12:35:43.772538 after 0.50 seconds
+[0m12:35:43.772538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D5B191880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D5BE0CE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D5B2C4380>]}
+[0m12:35:43.773656 [debug] [MainThread]: Flushing usage events

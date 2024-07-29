@@ -1,5 +1,6 @@
 # dbt_snowflake
 **Step 1**: Guides you through installing dbt using pip 
+```bash
    - python -m venv dbt-env
    - source dbt-env/bin/activate         # activate the environment for Mac and Linux OR
      dbt-env\Scripts\activate            # activate the environment for Windows
@@ -7,7 +8,7 @@
    - python -m pip install dbt-snowflake
    - mkdir $home\.dbt
    - dbt init
-
+```
 **Step 2**:  set up your Snowflake credentials in a `profiles.yml` file.
 ```bash
     - <account_name>: Your Snowflake account name (e.g., example for example.snowflakecomputing.com).

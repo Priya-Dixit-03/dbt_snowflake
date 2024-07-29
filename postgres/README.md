@@ -29,13 +29,16 @@ This guide provides instructions for setting up a DBT (Data Build Tool) project 
    ```bash
    pip install dbt
    pip install dbt-postgres
+```
 
 ## Create a DBT Project
 Create a new DBT project by running:
+```bash
 dbt init postgres_project
-
+```
 ## Configure DBT to Connect to PostgreSQL
 Edit the profiles.yml file located in the .dbt directory (create the directory if it doesn’t exist). Add a profile configuration for PostgreSQL:
+```bash
 my_postgres_profile:
   target: dev
   outputs:
@@ -47,7 +50,7 @@ my_postgres_profile:
       port: 5432
       dbname: postgres
       schema: public
-	  
+```  
 	
 ## Test Connection Using dbt debug
 Run the dbt debug command to check if DBT can successfully connect to your PostgreSQL database:

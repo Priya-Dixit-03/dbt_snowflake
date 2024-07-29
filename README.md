@@ -9,6 +9,7 @@
    - dbt init
 
 **Step 2**:  set up your Snowflake credentials in a `profiles.yml` file.
+```bash
     - <account_name>: Your Snowflake account name (e.g., example for example.snowflakecomputing.com).
      <username>: Your Snowflake username.
      <password>: Your Snowflake password.
@@ -16,13 +17,15 @@
      <database_name>: The name of your Snowflake database.
     <warehouse_name>: The name of your Snowflake warehouse.
     <schema_name>: The name of your Snowflake schema.
-
+```
 **Step 3**:  how to verify your setup by checking dbt installation and Snowflake connection.
+   ```bash
       - dbt debug
-
+```
 **Step 4**: Instructions for running your first dbt project against Snowflake.
+```bash
     - dbt run
-  
+  ```
 
 
 - **Additional Resources**: Links to dbt and Snowflake documentation for further learning.

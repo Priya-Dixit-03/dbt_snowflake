@@ -11,3 +11,8 @@ models:
         tests:
           - not_null
           - unique
+ 
+sources:
+  - name: postgres_schema
+    tables:
+      - name: students

@@ -75,7 +75,8 @@ Unit tests in dbt are used to validate the logic in your models. They ensure tha
 
 ### Creating Data Tests
 
-```version: 2
+```bash
+version: 2
 
 models:
   - name: student_info
@@ -87,7 +88,8 @@ models:
         description: "First name of the student"
         tests:
           - not_null
-          - unique```
+          - unique
+```
 		  
 		  
 **Test Types:**
@@ -97,7 +99,8 @@ models:
 ### Running Data Tests
 
 To run the data tests, use the following command:
-```# run data and unit tests
+```bash
+# run data and unit tests
 dbt test
 
 # run only data tests
@@ -119,7 +122,7 @@ dbt test --select "one_specific_model,test_type:data"
 
 # run unit tests limited to one_specific_model
 dbt test --select "one_specific_model,test_type:unit"
- 
+ ```
 # dbt Snapshots
 
 ## Introduction
@@ -136,7 +139,8 @@ Snapshots in dbt are used to capture the historical state of a table. This is us
 
 1. **Define a Snapshot:** Create a new SQL file in the `snapshots` directory of your dbt project. For example, `snapshots/customer_snapshot.sql`.
 
-    ```sql
+    ```bash
+    sql
     {% snapshot customer_snapshot %}
 
     {{
@@ -163,6 +167,7 @@ To run the snapshots, use the following command:
 
 ```bash
 dbt snapshot
+```
 ### Summary
 
 - **Setup DBT Project**: Initialize and configure DBT.
